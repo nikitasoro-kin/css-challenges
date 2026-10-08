@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --black: #282828;
+    --blue: #2892f9;
+    --red: #fb2f27;
+    --yellow: #fdfe29;
+}
+
+.container, .circle {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.circle1 {
+    width: 16em;
+    height: 16em;
+    background: var(--black);
+}
+
+.circle2 {
+    width: 12em;
+    height: 12em;
+    background: var(--blue);
+}
+
+.circle3 {
+    width: 8em;
+    height: 8em;
+    background: var(--red);
+}
+
+.circle4 {
+    width: 4em;
+    height: 4em;
+    background: var(--yellow);
+}
