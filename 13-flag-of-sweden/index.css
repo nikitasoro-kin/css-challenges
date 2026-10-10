@@ -1,0 +1,41 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: lightblue;
+}
+
+:root {
+    --yellow: #fecc00;
+    --blue: #0269a6;
+    --flag-height: 400px;
+    --left-ratio: 5;
+    --right-ratio: 8;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    display: grid;
+    grid-template-columns: 5fr 2fr 9fr;
+    grid-template-rows: 4fr 2fr 4fr;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * var(--right-ratio) / var(--left-ratio));
+    background: var(--blue);
+}
+
+.s1 {
+    background: var(--yellow);
+    grid-column: 2 /3;
+    grid-row: 1 / 4;
+}
+
+.s2 {
+    background: var(--yellow);
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}   
