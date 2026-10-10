@@ -1,0 +1,36 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    background: lightblue;
+}
+
+:root {
+    --white: #fff;
+    --red: #bc022c;
+    --flag-height: 400px;
+    --left-ratio: 2;
+    --right-ratio: 3;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * var(--right-ratio) / var(--left-ratio));
+    background: var(--white);
+}
+
+.circle {
+    background: var(--red);
+    border-radius: 50%;
+    height: calc(var(--flag-height) * 3 / 5);
+    width: calc(var(--flag-height) * 3 / 5);
+}
