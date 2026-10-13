@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    height: 18em;
+    width: 18em;
+    background: white;
+    border-radius: 50%;
+    animation: loading 2s linear infinite;
+    border: 3em solid hsl(0, 52%, 94%);
+    border-top: 3em solid rgb(255, 96, 207);
+}
+
+@keyframes loading {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
