@@ -1,0 +1,54 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    margin: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 15em;
+    width: 25em;
+    background: hsl(212, 97%, 30%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5em;
+    text-align: center;
+    border-radius: 24px;
+    transition: .5s;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+}
+
+.backside {
+    display: none;
+}
+
+.card:hover .backside{
+    display: block;
+    transform: rotateY(180deg);
+}
+
+.card:hover .frontside {
+    display: none;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
+.frontside, 
+.backside {
+    backface-visibility: hidden;
+}
