@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 3em;
+    width: 18em;
+    /* border: 2px solid hsl(0, 1%, 36%); */
+    outline: 2px solid hsl(0, 1%, 46%);
+    border-radius: 24px;
+}
+
+.progress {
+    height: inherit;
+    border-radius: 24px;
+}
+
+.state1 {
+    width: 0;
+}
+
+.state2 {
+    width: 25%;
+    background: #f03939;
+}
+
+.state3 {
+    width: 50%;
+    background: hsl(67, 80%, 63%);
+}
+
+.state4 {
+    width: 75%;
+    background: hsl(145, 100%, 63%);
+}
+
+.state5 {
+    width: 100%;
+    background: hsl(112, 93%, 59%);
+}
