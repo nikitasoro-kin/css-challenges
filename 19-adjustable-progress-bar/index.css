@@ -13,7 +13,7 @@ html, body {
 .progress-bar {
     height: 3em;
     width: 18em;
-    /* border: 2px solid hsl(0, 1%, 36%); */
+    background: hsl(0, 1%, 66%);
     outline: 2px solid hsl(0, 1%, 46%);
     border-radius: 24px;
 }
@@ -29,7 +29,7 @@ html, body {
 
 .state2 {
     width: 25%;
-    background: #f03939;
+    background: hsl(0, 86%, 58%);
 }
 
 .state3 {
