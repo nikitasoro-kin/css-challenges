@@ -1,0 +1,50 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color1: hsl(286, 100%, 50%);
+    --color2: hsl(41, 100%, 50%);
+    --color3: hsl(180, 100%, 50%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    height: 3em;
+    width: 28em;
+    background: hsl(0, 1%, 66%);
+    outline: 2px solid hsl(0, 1%, 46%);
+    border-radius: 24px;
+}
+
+.progress {
+    height: inherit;
+    width: 10%;
+    border-radius: 24px;
+    animation: progress 5s linear infinite;
+    background: var(--color1);
+}
+
+@keyframes progress {
+    50% {
+        background: var(--color2);
+        width: 50%;
+    }
+
+    75% {
+        background: var(--color3);
+        width: 100%;
+    }
+
+    100% {
+        background: var(--color3);
+        width: 100%;
+    }
+}
