@@ -1,0 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--graph-bg);
+}
+
+:root {
+    --squre-size: 12px;
+    --square-gap: 3px;
+
+    --graph-bg: hsl(0, 0%, 5%);
+    --level0: #161b22;
+    --level3: hsl(120, 100%, 10%);
+    --level5: hsl(120, 100%, 30%);
+    --level10: hsl(120, 100%, 76%);
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.graph {
+    display: grid;
+    grid-template-columns: repeat(52, 1fr);
+    gap: var(--square-gap);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.squre {
+    height: var(--squre-size);
+    width: var(--squre-size);
+    border-radius: 2px;
+    background: var(--level0);
+}
+
+.week {
+    display: flex;
+    flex-direction: column;
+    gap: var(--square-gap);
+}
+
+.squre[data-value="3"] {
+    background: var(--level3);
+}
+
+.squre[data-value="5"] {
+    background: var(--level5);
+}
+
+.squre[data-value="10"] {
+    background: var(--level10);
+}
